@@ -8,22 +8,19 @@ import * as runSummaries from '@aws/codecatalyst-run-summaries';
 import * as space from '@aws/codecatalyst-space';
 
 try {
-  // Get inputs from the action
-   const input_WhoToGreet = core.getInput('WhoToGreet'); // Who are we greeting here
- console.log(input_WhoToGreet);
- const input_HowToGreet = core.getInput('HowToGreet'); // How to greet the person
- console.log(input_HowToGreet);
+    // Get inputs from the action
+    const input_WhoToGreet = core.getInput('WhoToGreet'); // Who are we greeting here
+    console.log(input_WhoToGreet);
+    const input_HowToGreet = core.getInput('HowToGreet'); // How to greet the person
+    console.log(input_HowToGreet);
 
+    // Interact with CodeCatalyst entities
+    console.log(`Current CodeCatalyst space ${space.getSpace().name}`);
+    console.log(`Current CodeCatalyst project ${project.getProject().name}`);
 
-  // Interact with CodeCatalyst entities
-  console.log(`Current CodeCatalyst space ${space.getSpace().name}`);
-  console.log(`Current CodeCatalyst project ${project.getProject().name}`);
+    // Action Code start
 
-  // Action Code start
-
-  // Set outputs of the action
-  
-
-} catch(error) {
-  core.setFailed(`Action Failed, reason: ${error}`);
+    // Set outputs of the action
+} catch (error) {
+    core.setFailed(`Action Failed, reason: ${error}`);
 }

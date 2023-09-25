@@ -1,0 +1,17 @@
+Name: custom-action-CI-Validation
+SchemaVersion: "1.0"
+Triggers:
+  - Type: PullRequest
+    Events: [ open, revision ]
+    Branches:
+      - feature-.*
+Actions:
+  Validatecustom-action:
+    Identifier: .
+    Inputs:
+      Sources:
+        - WorkflowSource
+    Configuration:
+      WhoToGreet : 'TEST'
+      HowToGreet : 'TEST'
+

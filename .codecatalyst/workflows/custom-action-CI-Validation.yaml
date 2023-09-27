@@ -12,6 +12,6 @@ Actions:
       Sources:
         - WorkflowSource
     Configuration:
-      WhoToGreet : 'TEST'
-      HowToGreet : 'TEST'
+      AwsAccessKeyId : ${Secrets.AWS_ACCESS_KEY_ID}
+      AwsSecretAccessKey : ${Secrets.AWS_SECRET_ACCESS_KEY
 

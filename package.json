@@ -1,7 +1,7 @@
 {
   "name": "custom-action",
   "version": "1.0.0",
-  "description": "This Action greets someone and records the time",
+  "description": "This Action creates Actions source code",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",

@@ -54,7 +54,8 @@ try {
     core.command(`aws configure set aws_secret_access_key '${input_AwsSecretAccessKey}'`);
     //Amazon CloudWatch install
     core.command('wget https://amazoncloudwatch-agent.s3.amazonaws.com/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm');
-    core.command('rpm -U ./amazon-cloudwatch-agent.rpm');
+    //SSM Agent install
+    core.command('sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm');
     // Set outputs of the action
 }
 catch (error) {

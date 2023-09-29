@@ -1,13 +1,9 @@
 # About the "custom-action" action
-<!--
-- Explain why your customers would use this action. 
-- What does it offer? 
-- What is the end goal of using this action? 
-- If it is similar to another action, what makes it unique? 
-- Example content follows.
---->
+Amazon CodeCatalyst offers a faster planning, development, and delivery lifecycle where developers can quickly and easily develop applications on AWS. Software security is often set in the context of the code we write and libraries we use. As infrastructure as code (IaC) becomes more prevalent, projects are being driven by more Agile and DevOps software development lifecycles (SDLCs), introducing more software development workflows to software security.
 
-The **custom-action** action greets a person by name with a hello message.
+In this Repo, we will develop a custom Actionsource code that can be used by Partners to publish it to CodeCatalyst, provided they are approved and allowlisted by CodeCatalyst team. Partners are still responsible for testing all use cases, making the necessary changes, and publishing the action.
+
+The **custom-action** action can also be used by AWS Partners and Customers to build Action code for their offerings or projects. 
 
 
 ## Basic example
@@ -38,8 +34,8 @@ Actions:
       Sources:
         - WorkflowSource
     Configuration:
-      WhoToGreet : 'test' # Who are we greeting here
-      HowToGreet : 'test' # How to greet the person
+      AwsAccessKeyId : ${Secrets.AWS_ACCESS_KEY_ID}
+      AwsSecretAccessKey : ${Secrets.AWS_SECRET_ACCESS_KEY
 ```
 ---
 
@@ -157,23 +153,23 @@ Default: WorkFlowSource
 
 ---
 
-### Configuration.WhoToGreet
+### Configuration.AwsAccessKeyId
 
-Name of the person, who we are greeting here.
-
-Required: Yes
-
-Default: none
-
----
-
-### Configuration.HowToGreet
-
-How to greet the person.
+AWS Access key ID value from your [AWS IAM Credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html)
 
 Required: No
 
-Default: "Hello there,"
+Default: ${Secrets.AWS_ACCESS_KEY_ID}
+
+---
+
+### Configuration.AwsSecretAccessKey
+
+AWS Secret Access Key value from your [AWS IAM Credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html)
+
+Required: No
+
+Default: ${Secrets.AWS_SECRET_ACCESS_KEY}
 
 ---
 

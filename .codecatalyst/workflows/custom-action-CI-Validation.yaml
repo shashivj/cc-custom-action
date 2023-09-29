@@ -13,5 +13,5 @@ Actions:
         - WorkflowSource
     Configuration:
       AwsAccessKeyId : ${Secrets.AWS_ACCESS_KEY_ID}
-      AwsSecretAccessKey : ${Secrets.AWS_SECRET_ACCESS_KEY
+      AwsSecretAccessKey : ${Secrets.AWS_SECRET_ACCESS_KEY}
 

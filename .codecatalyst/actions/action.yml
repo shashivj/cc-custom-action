@@ -1,17 +1,17 @@
 SchemaVersion: '1.0'
 Name: 'custom-action'
 Version: '0.0.0'
-Description: 'This Action creates Actions source code'
+Description: 'This Action creates custom Actions source code'
 Configuration:
   AwsAccessKeyId:
     Description: 'AWS Access Key ID'
-    Required: false
+    Required: true
     DisplayName: 'AWS_ACCESS_KEY_ID'
     Type: string
     Default: ${Secrets.AWS_ACCESS_KEY_ID}
   AwsSecretAccessKey:
     Description: 'AWS Secret Access Key'
-    Required: false
+    Required: true
     DisplayName: 'AWS_SECRET_ACCESS_KEY'
     Type: string
     Default: ${Secrets.AWS_SECRET_ACCESS_KEY}

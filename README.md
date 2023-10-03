@@ -1,7 +1,7 @@
 # About the "custom-action" action
 Amazon CodeCatalyst offers a faster planning, development, and delivery lifecycle where developers can quickly and easily develop applications on AWS. Software security is often set in the context of the code we write and libraries we use. As infrastructure as code (IaC) becomes more prevalent, projects are being driven by more Agile and DevOps software development lifecycles (SDLCs), introducing more software development workflows to software security.
 
-In this Repo, we will develop a custom Actionsource code that can be used by Partners to publish it to CodeCatalyst, provided they are approved and allowlisted by CodeCatalyst team. Partners are still responsible for testing all use cases, making the necessary changes, and publishing the action.
+In this Project, we will develop a custom Actions source code that can be used by Partners to publish it to CodeCatalyst, provided they are approved and allowlisted by CodeCatalyst team. Partners are still responsible for testing all use cases, making the necessary changes, and publishing the action.
 
 The **custom-action** action can also be used by AWS Partners and Customers to build Action code for their offerings or projects. 
 

@@ -19,6 +19,7 @@ try {
     console.log(`Current CodeCatalyst project ${project.getProject().name}`);
 
     // Action Code start
+
     //aws cli install
     core.command('curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"');
     core.command('unzip awscliv2.zip');
